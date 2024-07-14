@@ -9,5 +9,6 @@ module.exports = {
     "no-unused-vars": "warn",
     quotes: ["error", "single"],
     semi: ["error", "never"],
+    "jsx-quotes": ["error", "prefer-single"],
   },
 };

@@ -34,8 +34,8 @@ export function SignIn() {
     toast({
       title: 'You submitted the following values:',
       description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+        <pre className='mt-2 w-[340px] rounded-md bg-slate-950 p-4'>
+          <code className='text-white'>{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
     })
@@ -43,24 +43,24 @@ export function SignIn() {
 
   return (
     <>
-      <Helmet title="Sign In" />
-      <div className="w-full h-full flex items-center justify-center border border-muted-foreground/35 rounded-sm bg-background ">
+      <Helmet title='Sign In' />
+      <div className='w-full h-full flex items-center justify-center border border-muted-foreground/35 rounded-sm bg-background '>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="w-2/3 space-y-6"
+            className='w-2/3 space-y-6'
           >
-            <div className="space-y-4">
-              <FormLabel className="text-3xl font-bold tracking-tight">
+            <div className='space-y-4'>
+              <FormLabel className='text-3xl font-bold tracking-tight'>
                 basic. Access
               </FormLabel>
               <FormField
                 control={form.control}
-                name="username"
+                name='username'
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Enter your e-mail" {...field} />
+                      <Input placeholder='Enter your e-mail' {...field} />
                     </FormControl>
                     <FormDescription>
                       An access link will be sent to your email inbox.
@@ -70,7 +70,7 @@ export function SignIn() {
                 )}
               />
             </div>
-            <Button type="submit">Submit</Button>
+            <Button type='submit'>Submit</Button>
           </form>
         </Form>
       </div>
